@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:latest
+FROM jupyter/minimal-notebook:latest
 
 MAINTAINER Josh Crites <critesjosh@gmail.com>
 
