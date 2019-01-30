@@ -4,8 +4,9 @@ MAINTAINER Josh Crites <critesjosh@gmail.com>
 
 USER root
 
-RUN apt-get install -yq --no-install-recommends nodejs-legacy npm libzmq3-dev && \
-npm install -g ijavascript && \
-ijs --ijs-install=global
+RUN apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN apt-get install -y nodejs libzmq3-dev build-essential && npm install -g ijavascript
+RUN ijs --ijs-install-kernel
 
 USER $NB_UID
