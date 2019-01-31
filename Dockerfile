@@ -11,6 +11,3 @@ RUN npm install -g ganache-cli
 
 RUN git clone https://github.com/critesjosh/web3js-jupyternotebook.git
 RUN cd web3js-jupyternotebook && npm install
-
-# for mounting local files
-RUN cd work && mkdir host-dir
