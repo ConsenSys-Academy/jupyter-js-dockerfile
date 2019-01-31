@@ -1,4 +1,4 @@
-Javascript kernel for jupyterhub in a docker image.
+Javascript kernel for a Jupyter notebook in a docker image, with some web3 examples.
 
 Based on the jupyter/minimal-notebook - https://hub.docker.com/r/jupyter/minimal-notebook/
 
