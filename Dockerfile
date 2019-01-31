@@ -10,5 +10,4 @@ USER $NB_UID
 RUN npm install -g ganache-cli
 
 RUN git clone https://github.com/critesjosh/web3js-jupyternotebook.git
-RUN cd web3js-jupyternotebook
-RUN npm install
+RUN cd web3js-jupyternotebook && npm install
